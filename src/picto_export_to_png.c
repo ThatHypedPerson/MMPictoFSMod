@@ -68,7 +68,7 @@ RECOMP_HOOK_RETURN("Play_TakePictoPhoto") void return_Play_TakePictoPhoto(PreRen
         //Python code here
         REPY_FN_EXEC_CACHE(pictobox_save,
             "import picto_export\n"
-            "picto_save.pictobox_to_directory(pictobox_photo, mod_folder_path)\n"
+            "picto_export.pictobox_to_directory(pictobox_photo, mod_folder_path)\n"
         );
 
         // Release pictobox photo Python object
@@ -99,7 +99,7 @@ RECOMP_HOOK("Play_CompressI8ToI5") void on_Play_CompressI8ToI5(void* srcI8, void
         //Python code here
         REPY_FN_EXEC_CACHE(pictobox_save,
             "import picto_export\n"
-            "picto_save.pictobox_to_directory(pictobox_photo, mod_folder_path)\n"
+            "picto_export.pictobox_to_directory(pictobox_photo, mod_folder_path)\n"
         );
 
         // Release pictobox photo Python object

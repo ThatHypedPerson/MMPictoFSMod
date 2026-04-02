@@ -66,8 +66,10 @@ data_reference_syms_files = [ "Zelda64RecompSyms/mm.us.rev1.datasyms.toml", "Zel
 
 # Additional files to include in the mod.
 additional_files = [ 
+	"thumb.png",
 	"src/picto_png.py",
-	"src/picto_save.py"
+	"src/picto_export.py",
+	"src/picto_export_to_png.c"
 ]
 
 [[manifest.config_options]]
