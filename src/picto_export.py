@@ -30,9 +30,10 @@ def pictobox_to_directory(pictobox_photo, save_directory):
     )
 
     # Prepare directory to save photo as PNG file
-    base_dir = Path(save_directory.decode("utf-8"))
-    photo_dir = base_dir / "MM_PictoPhotos"
-    photo_dir.mkdir(exist_ok=True)
+    base_dir = Path(save_directory.decode("utf-8")).parent
+    mod_folder = base_dir / "mod_data"
+    photo_dir = mod_folder / "MM_PictoPhotos"
+    photo_dir.mkdir(parents=True, exist_ok=True)
 
     # Prepare PNG file name
     timestamp = datetime.now().strftime("%Y-%m-%d_%H-%M-%S")
