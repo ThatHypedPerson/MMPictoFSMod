@@ -18,7 +18,9 @@ To run this mod, download the [REPY](https://thunderstore.io/c/zelda-64-recompil
 To locate the directory of the saved photos in your filesystem:
 1. Open the mod menu
 2. Click "Open Mods Folder"
-3. Locate "MM_PictoPhotos"
+3. Go to the directory's parent directory
+4. Go to the "mod_data" directory
+5. Locate "MM_PictoPhotos"
 
 All photos are saved in the directory.
 
